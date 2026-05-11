@@ -39,4 +39,9 @@ public class GameManager : MonoBehaviour
     {
         pickUpText.text = "Pickups: " + currentPickUps + '/' + maxPickUps;
     }
+
+    public void SpawnPickUpEffect()
+    {
+
+    }
 }
