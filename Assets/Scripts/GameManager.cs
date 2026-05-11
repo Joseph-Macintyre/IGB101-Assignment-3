@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public AudioSource[] audioSources;
     public float audioProx = 5.0f;
 
+    public GameObject pickUpEffect;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,6 +44,6 @@ public class GameManager : MonoBehaviour
 
     public void SpawnPickUpEffect()
     {
-
+        Instantiate(pickUpEffect, gameObject.transform.position, transform.rotation);
     }
 }

@@ -23,7 +23,7 @@ public class Pickup : MonoBehaviour
         if (otherObject.transform.tag == "Player" && Input.GetKeyDown("e"))
         {
             gameManager.currentPickUps += 1;
-            Instantiate(pickUpEffect, transform.position, transform.rotation);
+            gameManager.SpawnPickUpEffect();
             Destroy(this.gameObject);
         }
     }
