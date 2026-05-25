@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "n11961911 - IGB101 Assignment 2 project.slnx"
+    "dotnet.defaultSolution": "IGB101-Assignment-3.slnx"
 }
