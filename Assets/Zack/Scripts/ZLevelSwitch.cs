@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,6 +8,7 @@ public class ZLevelSwitch : MonoBehaviour
 
     ZGameManager gameManager;
     public string nextLevel;
+    public bool OnPlatform;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,14 +21,18 @@ public class ZLevelSwitch : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private async void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Player")
         {
             if (gameManager.levelCompleted)
             {
+                OnPlatform = true;
+                await Awaitable.WaitForSecondsAsync(5);
                 SceneManager.LoadScene(nextLevel);
             }
         }
     }
+
+
 }

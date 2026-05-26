@@ -7,10 +7,12 @@ public class ZPlayerMovement : MonoBehaviour{
     public Animator anim;
 
     public float rotSpeed = 10;
+    Horror1Script HorrorScript;
 
     // Start is called before the first frame update
-    void Start(){
-        
+    void Start()
+    {
+        HorrorScript = GameObject.FindGameObjectWithTag("Horror1").GetComponent<Horror1Script>();
     }
 
     // Update is called once per frame
@@ -27,7 +29,8 @@ public class ZPlayerMovement : MonoBehaviour{
     private void ForwardMovement(){
         if(Input.GetKey("w")){
             anim.SetBool("Walking", true);
-            if (Input.GetKey(KeyCode.LeftShift)){
+            if (Input.GetKey(KeyCode.LeftShift) & HorrorScript.StopRunning == false)
+            {
                 anim.SetBool("Running", true);
             } else{
                 anim.SetBool("Running", false);
