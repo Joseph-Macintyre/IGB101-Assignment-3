@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: acc0d4d9345dc3745846f6bf59ec406b, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: ab675e6698bde46fd87143fb0d7580cb, type: 2}
   m_HaloStrength: 0.575
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -7212,9 +7212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2012848318}
-  currentPickups: 0
+  currentPickups: 6
   maxPickups: 6
-  levelCompleted: 0
+  levelCompleted: 1
   FireT: {fileID: 1887504960}
   FireAL: {fileID: 2014404836}
   FireAR: {fileID: 38733999}
