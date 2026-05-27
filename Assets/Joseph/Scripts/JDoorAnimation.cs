@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DoorAnimation : MonoBehaviour
+public class JDoorAnimation : MonoBehaviour
 {
 
     public Animation doorAnimation;

@@ -14,8 +14,6 @@ public class JGameManager : MonoBehaviour
     public AudioSource[] audioSources;
     public float audioProx = 5.0f;
 
-    public GameObject pickUpEffect;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,8 +40,8 @@ public class JGameManager : MonoBehaviour
         pickUpText.text = "Pickups: " + currentPickUps + '/' + maxPickUps;
     }
 
-    public void SpawnPickUpEffect()
+    /*public void SpawnPickUpEffect()
     {
-        Instantiate(pickUpEffect, gameObject.transform.position, transform.rotation);
-    }
+        Instantiate(pickUpEffect, gameObject.transform.position, Quaternion.identity);
+    }*/
 }
