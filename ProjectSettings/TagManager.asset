@@ -8,6 +8,7 @@ TagManager:
   - Horror3
   - Lights
   - Horror1
+  - Pickup
   layers:
   - Default
   - TransparentFX
