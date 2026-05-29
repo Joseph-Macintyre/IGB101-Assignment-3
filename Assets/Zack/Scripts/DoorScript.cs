@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using UnityEditor.Build;
+//using UnityEditor.Build;
 using UnityEngine;
 
 public class DoorScript : MonoBehaviour

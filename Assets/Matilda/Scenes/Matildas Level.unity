@@ -5984,7 +5984,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &563182656
 MeshRenderer:
@@ -18708,6 +18708,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbef159b86818454cb094db66e3532b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraMovement
+  cameraNodes: []
+  objects: []
+  moveSpeed: 5
+  rotSpeed: 5
 --- !u!1 &1030274528
 GameObject:
   m_ObjectHideFlags: 0

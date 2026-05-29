@@ -1,3 +1,8 @@
+Joseph Macintyre - n11961911
+
+Game Instructions:
+
+
 imported asset packs:
 
 Free Trees
