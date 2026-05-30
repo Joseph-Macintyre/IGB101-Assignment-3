@@ -9,6 +9,7 @@ TagManager:
   - Lights
   - Horror1
   - Pickup
+  - Button
   layers:
   - Default
   - TransparentFX
